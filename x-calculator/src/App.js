@@ -13,7 +13,7 @@ const App = () => {
         setResult(result.toString());
         setValue("");
       } catch (error) {
-        setValue("Error");
+        setResult("Error");
       }
     } else if (clickedValue === "C") {
       setValue("");
