@@ -81,7 +81,13 @@ const App = () => {
         </button>{" "}
       </div>{" "}
       <div className="btnWrapper">
-        <button value={""} onClick={(e) => setResult("")}>
+        <button
+          value={""}
+          onClick={(e) => {
+            setResult("");
+            setValue(e.target.value);
+          }}
+        >
           {" "}
           C{" "}
         </button>{" "}
